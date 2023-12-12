@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
   const navLinks = <>
-    <li><Link to='/' >Home</Link></li>
-    <li><Link to='/about' >About</Link></li>
-    <li><Link to='/carrer' >Carrer</Link></li>
-    <li><Link to='/' >Contacts</Link></li>
+    <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/about">About</NavLink></li>
+    <li><NavLink to="/career">Career</NavLink></li>
+    <li><NavLink to="/addict">Addict</NavLink></li>
+    <li><NavLink to="/login">Login</NavLink></li>
   </>
   return (
     <div className="navbar bg-base-100">
@@ -32,8 +33,9 @@ const Navbar = () => {
             <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
           </div>
         </div>
-
-        <Link>         <a className="btn">Login</a>  </Link>
+        <Link to="/login">
+          <button className="btn">Login</button>
+        </Link>
       </div>
     </div>
   );

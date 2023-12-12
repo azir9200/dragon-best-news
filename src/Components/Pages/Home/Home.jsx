@@ -1,9 +1,9 @@
-import LeftSideBar from "../LeftSideBar/LeftSideBar";
-import RightSideBar from "../RightSideBar/RightSideBar";
-import AllNews from "../Shared/AllNews/AllNews";
-import BreakingNews from "../Shared/BreakingNews/BreakingNews";
-import Header from "../Shared/Header/Header";
-import Navbar from "../Shared/Navbar/Navbar";
+import LeftSideBar from "../../LeftSideBar/LeftSideBar";
+import RightSideBar from "../../RightSideBar/RightSideBar";
+import AllNews from "../../Shared/AllNews/AllNews";
+import BreakingNews from "../../Shared/BreakingNews/BreakingNews";
+import Header from "../../Shared/Header/Header";
+import Navbar from "../../Shared/Navbar/Navbar";
 
 
 const Home = () => {
