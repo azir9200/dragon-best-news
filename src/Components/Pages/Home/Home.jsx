@@ -4,9 +4,13 @@ import AllNews from "../../Shared/AllNews/AllNews";
 import BreakingNews from "../../Shared/BreakingNews/BreakingNews";
 import Header from "../../Shared/Header/Header";
 import Navbar from "../../Shared/Navbar/Navbar";
+import { useLoaderData } from "react-router-dom";
+import NewsCard from "./NewsCard";
 
 
 const Home = () => {
+  const newses = useLoaderData();
+
   return (
     <div>
       <div>
@@ -25,6 +29,14 @@ const Home = () => {
 
         <div className="col-span-2 border" >
           <h2 className="text-3xl"> News Coming Soon</h2>
+          {
+            newses.map(news => <NewsCard
+
+              key={news._id}
+              news={news}
+            ></NewsCard>)
+          }
+
         </div>
 
         <div className="border" >
